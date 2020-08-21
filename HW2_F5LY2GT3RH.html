@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="GTL Assignment 2">
+  <title>Get Time Assignment</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column
+    }
+
+    h2{
+        font-family: Nunito, sans-serif;
+        font-size: 32px;
+        color: rgb(146, 137, 137);
+    }
+
+    button{
+        background: gray;
+      color: #fff;
+      border: 0;
+      outline-style: none;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 20px;
+      
+    }
+
+    
+  </style>
+</head>
+<body>
+  <button class="button">Get Time</button>
+  <h2></h2>
+
+
+  <script>
+    let btn = document.querySelector(".button");
+    btn.addEventListener("click", () => {
+      let time = document.querySelector("h2");
+      time.innerText = new Date();
+    })
+  </script>
+</body>
+</html>
